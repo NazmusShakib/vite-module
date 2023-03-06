@@ -1,9 +1,12 @@
 import axios from 'axios'
 import localStorage from '@/services/localStorage'
 
-// Add a request interceptor
-axios.defaults.baseURL = 'http://localhost:8000/api' //process.env.VUE_APP_API_BASE_URL
+// require('dotenv').config({ path: '../../../../../.env' })
 
+// Add api baseurl
+axios.defaults.baseURL = process.env.VUE_APP_API_BASE_URL
+
+// Add a request interceptor
 axios.interceptors.request.use(
   (request) => {
     const token = localStorage.get('token')

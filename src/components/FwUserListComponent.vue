@@ -285,12 +285,11 @@
 </template>
 
 <script>
-import FwPagination from '@/components/partials/FwPaginationComponent.vue'
+import FwPagination from '@/components/partials/FwPagination.vue'
 import FwSortIcons from '@/components/partials/FwSortIcons.vue'
 import DatePicker from 'vue2-datepicker'
 import 'vue2-datepicker/index.css'
 import { CommonAPI, UserAPI, RoleAPI } from '@/services/api'
-import { Notification } from 'element-ui'
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const fileDownload = require('js-file-download')
 const filterable = {
@@ -333,22 +332,25 @@ export default {
     },
   },
   mounted: function () {
-    this.getRoles()
-    this.getOrganization()
-    this.getUsers()
+    this.init()
   },
-  created: function () {
-    /* this.$root.$on('sort-data', () => {
-      this.$root.$emit('show-icon')
-    })
-    Object.keys(this.$route.query).forEach((key) => {
-      if (key in this.filter) {
-        this.filter[key] = this.$route.query[key]
-        this.show_filter = true
-      }
-    }) */
-  },
+  created: function () {},
   methods: {
+    init() {
+      this.getRoles()
+      this.getOrganization()
+      this.getUsers()
+
+      this.$root.$on('sort-data', () => {
+        this.$root.$emit('show-icon')
+      })
+      Object.keys(this.$route.query).forEach((key) => {
+        if (key in this.filter) {
+          this.filter[key] = this.$route.query[key]
+          this.show_filter = true
+        }
+      })
+    },
     getRoles() {
       RoleAPI.index().then((roles) => {
         this.roles = roles.data.map((role) => {

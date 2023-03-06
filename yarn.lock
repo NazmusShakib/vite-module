@@ -500,6 +500,11 @@
     "@nodelib/fs.scandir" "2.1.5"
     "fastq" "^1.6.0"
 
+"@pmochine/vee-validate-laravel@^1.0.6":
+  "integrity" "sha512-LOz9yHJPeusoKRP1AXoIO5jNPXX98Dwtwhs0K0fOQUZNeFh7FSbTuXbNnPP+VwD5CpurFJ9413TS7TIn2fERMQ=="
+  "resolved" "https://registry.npmjs.org/@pmochine/vee-validate-laravel/-/vee-validate-laravel-1.0.6.tgz"
+  "version" "1.0.6"
+
 "@rollup/pluginutils@^4.2.1":
   "integrity" "sha512-iKnFXr7NkdZAIHiIWE+BX5ULi/ucVFYWD6TbAV+rZctiRTY2PL6tsIKhoIOaoskiWAkgu+VsbXgUVDNLHf+InQ=="
   "resolved" "https://registry.npmjs.org/@rollup/pluginutils/-/pluginutils-4.2.1.tgz"
@@ -1007,6 +1012,11 @@
   "integrity" "sha512-DJWSiQ7X7stPToB8WPBt6S+2bqCtClW2IRbjszp38l7bXn3j8XAV9ZGJ5Je1MmkR8MPdtPc60OT+cei2hJ644g=="
   "resolved" "https://registry.npmjs.org/design-system-starter/-/design-system-starter-0.0.10.tgz"
   "version" "0.0.10"
+
+"dotenv@^16.0.3":
+  "integrity" "sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ=="
+  "resolved" "https://registry.npmjs.org/dotenv/-/dotenv-16.0.3.tgz"
+  "version" "16.0.3"
 
 "electron-to-chromium@^1.4.284":
   "integrity" "sha512-RoDlZufvrtr2Nx3Yx5MB8jX3aHIxm8nRWPJm3yVvyHmyKaRvn90RjzB6hNnt0AkhS3IInJdyRfQb4mWhPvUjVw=="
@@ -1713,6 +1723,11 @@
   "resolved" "https://registry.npmjs.org/validator/-/validator-13.9.0.tgz"
   "version" "13.9.0"
 
+"vee-validate@^2.1.0", "vee-validate@^2.2.15":
+  "integrity" "sha512-4TOsI8XwVkKVLkg8Nhmy+jyoJrR6XcTRDyxBarzcCvYzU61zamipS1WsB6FlDze8eJQpgglS4NXAS6o4NDPs1g=="
+  "resolved" "https://registry.npmjs.org/vee-validate/-/vee-validate-2.2.15.tgz"
+  "version" "2.2.15"
+
 "vite-plugin-dts@^2.0.2":
   "integrity" "sha512-i3HBlrdqE2FQxQqrNwFj9P2ei/I7lt/d3Q8NOE1JCz/gNYhNf/oUeIJamIdWQUNQGhUd/Y6mtpm3kOYPw1gz8Q=="
   "resolved" "https://registry.npmjs.org/vite-plugin-dts/-/vite-plugin-dts-2.0.2.tgz"
@@ -1786,6 +1801,11 @@
   optionalDependencies:
     "fsevents" "~2.3.2"
 
+"vue-multiselect@^2.1.7":
+  "integrity" "sha512-KIegcN+Ntwg3cbkY/jhw2s/+XJUM0Lpi/LcKFYCS8PrZHcWBl2iKCVze7ZCnRj3w8H7/lUJ9v7rj9KQiNxApBw=="
+  "resolved" "https://registry.npmjs.org/vue-multiselect/-/vue-multiselect-2.1.7.tgz"
+  "version" "2.1.7"
+
 "vue-sweetalert2@^5.0.5":
   "integrity" "sha512-Q7+TjQxNwGruT2jfPaSKMz18HHWs81r4umEwlrrtOf/QL5Iwl1T+tUaNkcvKB7Rf9rYftubt7NnOMjfDMnDH3A=="
   "resolved" "https://registry.npmjs.org/vue-sweetalert2/-/vue-sweetalert2-5.0.5.tgz"
@@ -1832,7 +1852,7 @@
     "@volar/vue-language-core" "1.1.7"
     "@volar/vue-typescript" "1.1.7"
 
-"vue@*", "vue@^2.5.0", "vue@^2.5.17", "vue@^2.7.14", "vue@^3.2.25":
+"vue@*", "vue@^2.0.0", "vue@^2.5.0", "vue@^2.5.17", "vue@^2.7.14", "vue@^3.2.25":
   "integrity" "sha512-b2qkFyOM0kwqWFuQmgd4o+uHGU7T+2z3T+WQp8UBjADfEv2n4FEMffzBmCKNP0IGzOEEfYjvtcC62xaSKeQDrQ=="
   "resolved" "https://registry.npmjs.org/vue/-/vue-2.7.14.tgz"
   "version" "2.7.14"

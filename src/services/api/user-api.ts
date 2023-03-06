@@ -27,6 +27,18 @@ export default {
         })
     })
   },
+  updateUser(id: any, payload: any) {
+    return new Promise((resolve) => {
+      axios
+        .put('admin_users/' + id, payload)
+        .then((response) => {
+          resolve(response.data)
+        })
+        .catch((error) => {
+          resolve(error)
+        })
+    })
+  },
   deleteUser: function (id = null) {
     return new Promise((resolve) => {
       axios

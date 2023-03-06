@@ -1,14 +1,17 @@
-import '@/lib/element-ui'
+import '@/plugins/element-ui'
+import '@/plugins/veeValidate'
+import '@/plugins/multiselect'
+
 import '@/services/api/axios'
 
-// import App from '@/App.vue'
-import FwUserList from '@/components/FwUserList.vue'
-import FwUserShow from '@/components/FwUserShow.vue'
+import FwUserList from '@/components/FwUserListComponent.vue'
+import FwUserShow from '@/components/FwUserShowComponent.vue'
+import FwUserForm from '@/components/FwUserFormComponent.vue'
 
 export default {
   install: (Vue: any, options: any) => {
     Vue.component('FwUserList', FwUserList)
     Vue.component('FwUserShow', FwUserShow)
-    // Vue.component('AppApp', App)
+    Vue.component('FwUserForm', FwUserForm)
   },
 }
