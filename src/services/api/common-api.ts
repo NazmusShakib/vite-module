@@ -1,5 +1,4 @@
 import axios from 'axios'
-const _ = require('lodash')
 
 export default {
   getAllOrganizations: function () {
@@ -115,7 +114,7 @@ export default {
       })
     })
   },
-  check: function (conditions: string): any {
+  /* check: function (conditions: string): any {
     const code = '' + conditions + ';'
     // console.log(code);
     // eslint-disable-next-line no-eval
@@ -154,5 +153,5 @@ export default {
     }
 
     return initials.toUpperCase()
-  }
+  } */
 }

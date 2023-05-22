@@ -291,7 +291,10 @@ import DatePicker from 'vue2-datepicker'
 import 'vue2-datepicker/index.css'
 import { CommonAPI, UserAPI, RoleAPI } from '@/services/api'
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-const fileDownload = require('js-file-download')
+// const fileDownload = require('js-file-download')
+
+import * as _ from 'lodash'
+
 const filterable = {
   username: '',
   name: '',
