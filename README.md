@@ -39,7 +39,7 @@ npm uninstall --no-save fw-users -f && npm install -f
 Clean up the global link, though its presence won’t interfere with our main application.
 ```
 cd ~/projects/component-library-dir
-npm uninstall  # Delete global symlink
+npm uninstall fw-users # Delete global symlink
 ```
 
 
