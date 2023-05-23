@@ -15,10 +15,10 @@ Package linking is a two-step process:
 - Create a global symlink for a dependency with npm link. A symlink, short for symbolic link, is a shortcut that points to another directory or file on your system.
 - Tell the application to use the global symlink with npm link some-dep.
 ```
-cd ~/projects/some-dep
-npm link  # Step 1.
-cd ~/projects/my-app
-npm link some-dep  # Step 2.
+cd ~/projects/component-library-dir
+npm link  # Step 1
+cd ~/projects/main-app-dir
+npm link fw-users  # Step 2
 ```
 ### Building
 
