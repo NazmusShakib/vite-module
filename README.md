@@ -27,22 +27,6 @@ cd ~/projects/component-library-dir
 npm run build
 ```
 
-## Back to Normal
-
-When we don’t want to use the local version anymore, delete the symlink. But careful, npm unlink is an alias for npm uninstall, it does not mirror the behavior of npm link.
-
-```
-cd ~/projects/main-app-dir
-npm uninstall --no-save fw-users -f && npm install -f
-```
-
-Clean up the global link, though its presence won’t interfere with our main application.
-```
-cd ~/projects/component-library-dir
-npm uninstall fw-users # Delete global symlink
-```
-
-
 ### Hosting via NPM
 
 First, make sure you have an NPM account and are [logged into NPM using the `npm login` command.](https://docs.npmjs.com/creating-a-new-npm-user-account)
@@ -77,6 +61,21 @@ export default {
 }
 </script>
 
+```
+
+## Back to Normal
+
+When we don’t want to use the local version anymore, delete the symlink. But careful, npm unlink is an alias for npm uninstall, it does not mirror the behavior of npm link.
+
+```
+cd ~/projects/main-app-dir
+npm uninstall --no-save fw-users -f && npm install -f
+```
+
+Clean up the global link, though its presence won’t interfere with our main application.
+```
+cd ~/projects/component-library-dir
+npm uninstall  # Delete global symlink
 ```
 
 [Check out this Code Sandbox for a live example.](https://loading...)
