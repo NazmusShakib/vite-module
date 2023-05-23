@@ -42,7 +42,7 @@
                 class="img-circle img-avatar mr-3"
               />
               <div class="media-body">
-                <h6 class="m-0">{{ value.name }} {{ value.avatar }}</h6>
+                <h6 class="m-0">{{ value.name }}</h6>
               </div>
             </div>
             <div class="custom-list">
