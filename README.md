@@ -8,7 +8,7 @@ This project skeleton was created as a starter with creating their own Vue compo
 - [Rollup](https://github.com/rollup/rollup)
 - [TypeScript](https://www.typescriptlang.org/)
 
-## Development use
+## Development use for local publish
 
 Package linking is a two-step process:
 
@@ -18,15 +18,29 @@ Package linking is a two-step process:
 cd ~/projects/component-library-dir
 npm link  # Step 1
 cd ~/projects/main-app-dir
-npm link fw-users  # Step 2
+npm link fw-users  # Step 2 fw-users is our package name
 ```
 ### Building
 
 ```
+cd ~/projects/component-library-dir
 npm run build
 ```
 
-## Publishing
+## Back to Normal
+
+When we don’t want to use the local version anymore, delete the symlink. But careful, npm unlink is an alias for npm uninstall, it does not mirror the behavior of npm link.
+
+```
+cd ~/projects/main-app-dir
+npm uninstall --no-save fw-users -f && npm install -f
+```
+
+Clean up the global link, though its presence won’t interfere with our main application.
+```
+cd ~/projects/component-library-dir
+npm uninstall  # Delete global symlink
+```
 
 
 ### Hosting via NPM
