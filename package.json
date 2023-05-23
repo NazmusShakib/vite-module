@@ -1,7 +1,7 @@
 {
   "name": "fw-users",
   "description": "fw-users plugin",
-  "version": "0.1.6",
+  "version": "0.1.10",
   "private": false,
   "type": "module",
   "main": "./dist/fw-users.cjs.ts",

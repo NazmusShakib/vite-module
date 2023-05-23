@@ -8,7 +8,15 @@ This project skeleton was created as a starter with creating their own Vue compo
 - [Rollup](https://github.com/rollup/rollup)
 - [TypeScript](https://www.typescriptlang.org/)
 
-## Development use for local publish
+### Building
+
+```
+cd ~/projects/component-library-dir
+npm install
+npm run build
+```
+
+## For local publishing in development
 
 Package linking is a two-step process:
 
@@ -19,12 +27,6 @@ cd ~/projects/component-library-dir
 npm link  # Step 1
 cd ~/projects/main-app-dir
 npm link fw-users  # Step 2 fw-users is our package name
-```
-### Building
-
-```
-cd ~/projects/component-library-dir
-npm run build
 ```
 
 ### Hosting via NPM
@@ -40,6 +42,7 @@ npm publish
 The `"prepublishOnly": "npm run build"` script in `package.json` will execute before publish occurs, ensuring the `build/` directory and the compiled component library exist.
 
 ## Usage
+Available components are - `FwUserForm`, `FwUserShow`, `FwUserList`
 
 Usage of the component will be:
 
@@ -75,7 +78,7 @@ npm uninstall --no-save fw-users -f && npm install -f
 Clean up the global link, though its presence won’t interfere with our main application.
 ```
 cd ~/projects/component-library-dir
-npm uninstall  # Delete global symlink
+npm uninstall fw-users # Delete global symlink
 ```
 
 [Check out this Code Sandbox for a live example.](https://loading...)
